@@ -10,18 +10,19 @@ import java.net.http.HttpResponse;
 public class ConsultaDeCambios2X {
     public Cambio2X buscarCambios() {
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/c53c8d6068422b759ec90ffd/latest/USD");
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(direccion)
-                .build();
+
         try {
+            HttpClient client = HttpClient.newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(direccion)
+                    .build();
 
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
             String json = response.body();
             System.out.println(json);
-            Gson gson = new GsonBuilder()
-                    .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
-                    .create();
+//            Gson gson = new GsonBuilder()
+//                    .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+//                    .create();
 
             return new Gson().fromJson(json, Cambio2X.class);
 

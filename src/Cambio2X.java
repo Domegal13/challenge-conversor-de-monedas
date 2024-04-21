@@ -1,8 +1,5 @@
 public class Cambio2X {
-    public record Cambio( String base_code,
-                          String target_code,
-                          double conversion_rate,
-                          double conversion_result) {
+    public record Cambio( String conversion_rates) {
 
     }
 
