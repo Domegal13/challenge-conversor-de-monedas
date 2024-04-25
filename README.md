@@ -25,16 +25,16 @@ Para nuestro actual desafío, hemos elegido la API **_"Exchange Rate API"_** por
 1. Ejecuta la aplicación.
 2. Selecciona un opción del menú. (De acuerdo al cambio que desees realizar).
 
-   ![Menú](../images/01-pantalla-principal.png "Menú Principal")
+   ![Menú](./images/01-pantalla-principal.png "Menú Principal")
 
 3. Ingresa la cantidad que deseas convertir.
 
-   ![Menú](../images/02-cantidad-a-convertir.png "Cantidad a Convertir")
+   ![Menú](./images/02-cantidad-a-convertir.png "Cantidad a Convertir")
 
 4. Presiona la tecla "Enter".
 5. La aplicación mostrará el resultado de la conversión en pantalla.
 
-   ![Menú](../images/03-resultado-en-pantalla.png "Resultado en Pantalla")
+   ![Menú](./images/03-resultado-en-pantalla.png "Resultado en Pantalla")
 
 ---
 
